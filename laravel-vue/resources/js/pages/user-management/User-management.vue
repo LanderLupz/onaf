@@ -11,6 +11,29 @@
             </div>
 
 
+            <div class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Subscriber ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Quarter</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
 
                  
 
