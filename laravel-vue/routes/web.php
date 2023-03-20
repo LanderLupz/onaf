@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicationController;
 
@@ -13,4 +14,5 @@ use App\Http\Controllers\ApplicationController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/api/users', [UserController::class, 'index']);
 Route::get('{view}', ApplicationController::class)->where('view', '(.*)');

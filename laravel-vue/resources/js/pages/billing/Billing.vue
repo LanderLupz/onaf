@@ -14,28 +14,113 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th style="width: 10px">#</th>
-                            <th>Subscriber ID</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Quarter</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                </table>
+              <form>
+  <div class="form-row">
+    <div class="col-sm-3">
+      <input type="text" class="form-control" placeholder="Subscriber ID">
+    </div>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" placeholder="Name">
+    </div>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" placeholder="Quarter">
+    </div>
+    <div class="col-sm-3">
+      <button type="button" class="btn btn-secondary mr-4">Search</button>
+    </div>
+    
+     
+     
+</div>
+  
+</form>
+
 
             </div>
 
         </div>
         </div>
+        
     </div>
 
-                 
+      <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+      <table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Subscriber ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Quarter</th>
+      <th scope="col">Address</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tr>
+                            <td>1</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>
+                              <button type="button" class="btn btn-info mr-2">View</button>
+                              <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#generateBill">Generate Bill</button>
+ 
+                            </td>
+                        </tr>
+</table>
 
+   </div>
+</div>   
+<div class="modal fade  bd-example-modal-lg" id="generateBill" tabindex="-1" role="dialog" aria-labelledby="GenerateBillModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GenerateBillLabel">Billing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+   <!--Modal Form-->
+   
+        <h5>Billing Type</h5>
+        <div class="form-check form-check-inline mt-3 col-sm-2">
+  <input class="form-check-input" type="checkbox" id="ElectricCheckbox1" value="option1" />
+  <label class="form-check-label" for="ElectricCheckbox1">Electric</label>
+</div>
+
+<div class="form-check form-check-inline mt-3 col-sm-2">
+  <input class="form-check-input" type="checkbox" id="WaterCheckbox2" value="option2" />
+  <label class="form-check-label" for="WaterCheckbox2">Water</label>
+</div>
+
+<div class="form-check form-check-inline mt-3 col-sm-2">
+  <input class="form-check-input" type="checkbox" id="RentalCheckbox3" value="option3" />
+  <label class="form-check-label" for="RentalCheckbox3">Rental</label>
+</div>
+
+<div class="form-check form-check-inline mt-3 col-sm-3">
+  <input class="form-check-input" type="checkbox" id="ElecWatCheckbox4" value="option4" />
+  <label class="form-check-label" for="ElecWatCheckbox4">Electric & Water</label>
+</div>
+</form>
+      
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Generate</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    
 
 
 <!--

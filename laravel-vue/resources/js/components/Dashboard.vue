@@ -91,7 +91,7 @@ content.
 Anything you want
 </div>
 
-<strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">NETBn</a>.</strong> All rights reserved.
+<strong>Copyright &copy; 2014-2021 <a href="#">NETBn</a>.</strong> All rights reserved.
 </footer>
 -->
 </template>

@@ -8,7 +8,11 @@
 <title>OJT Draft Project</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="icon" type="image/png" sizes="16x16" href="/build/assets/favicon-16x16.png">
+<!--<link rel="apple-touch-icon" sizes="180x180" href="/build/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/build/assets/favicon-32x32.png">
 
+<link rel="manifest" href="/site.webmanifest">-->
 <!--<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">-->
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <!--<link rel="stylesheet" href="dist/css/adminlte.min.css?v=3.2.0">-->
@@ -235,7 +239,7 @@ ADMINISTRATION
 <li class="nav-item">
 <router-link to="/laravel-vue/user-management" active-class="active" class="nav-link">
 <i class="fas fa-users nav-icon"></i>
-<p>User Management</p>
+<p> User Management</p>
 </router-link>
 </li>
 
@@ -246,7 +250,7 @@ ADMINISTRATION
 <li class="nav-item">
 <a href="#" class="nav-link">
 <i class="nav-icon fas fa-sign-out-alt"></i>
-<p>Logout
+<p> Logout
 </p>
 </a>
 </li>
