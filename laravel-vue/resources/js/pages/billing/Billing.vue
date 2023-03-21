@@ -66,8 +66,8 @@
                             <td>C</td>
                             <td>D</td>
                             <td>
-                              <button type="button" class="btn btn-info mr-2">View</button>
-                              <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#generateBill">Generate Bill</button>
+              <router-link to="/laravel-vue/Userbill"><button class="btn btn-info mr-2">View</button></router-link>
+                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#generateBill">Generate Bill</button>
  
                             </td>
                         </tr>
@@ -88,7 +88,7 @@
         <form>
    <!--Modal Form-->
    
-        <h5>Billing Type</h5>
+        <h6>Billing Type</h6>
         <div class="form-check form-check-inline mt-3 col-sm-2">
   <input class="form-check-input" type="checkbox" id="ElectricCheckbox1" value="option1" />
   <label class="form-check-label" for="ElectricCheckbox1">Electric</label>
@@ -104,13 +104,27 @@
   <label class="form-check-label" for="RentalCheckbox3">Rental</label>
 </div>
 
-<div class="form-check form-check-inline mt-3 col-sm-3">
+<div class="form-check form-check-inline mt-3 col-sm-3 mb-3">
   <input class="form-check-input" type="checkbox" id="ElecWatCheckbox4" value="option4" />
   <label class="form-check-label" for="ElecWatCheckbox4">Electric & Water</label>
 </div>
+
+<h6 class="mt-3">Type of Reading</h6>
+        <div class="form-check form-check-inline mt-3 col-sm-2">
+  <input class="form-check-input" type="checkbox" id="meteredCheckbox1" value="option1" />
+  <label class="form-check-label" for="meteredCheckbox1">Metered</label>
+</div>
+
+<div class="form-check form-check-inline mt-3 col-sm-2 mb-3">
+  <input class="form-check-input" type="checkbox" id="flatRateCheckbox2" value="option2" />
+  <label class="form-check-label" for="flatRateCheckbox2">Flat Rate</label>
+</div>
+
+<div class="row ml-1 mt-1">
+          <label for="InputDateRange" class="col-form-label mr-3 ">Month/Year</label>  
+      <input type="month" class="form-control col-sm-3" name="start" value="{{ $start }}" />
+    </div>
 </form>
-      
-    
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

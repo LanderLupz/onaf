@@ -119,7 +119,7 @@
          <option>III</option>
       </select>
         </div>
-        <h5>Transaction</h5>
+        <h6>Transaction</h6>
         <div class="form-check form-check-inline mt-3">
   <input class="form-check-input" type="checkbox" id="ElectricCheckbox1" value="option1" />
   <label class="form-check-label" for="ElectricCheckbox1">Electric</label>
